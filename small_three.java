@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class large_three {
+class small_three {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -13,15 +13,15 @@ class large_three {
         System.out.println("Enter third number:");
         int c = sc.nextInt();
 
-        int largest = a;
+        int smallest = a;
 
-        if (b > largest)
-            largest = b;
+        if (b < smallest)
+            smallest = b;
 
-        if (c > largest)
-            largest = c;
+        if (c < smallest)
+            smallest = c;
 
-        System.out.println("Largest: " + largest);
+        System.out.println("Smallest: " + smallest);
 
         sc.close();
     }
