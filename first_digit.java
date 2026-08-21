@@ -1,13 +1,16 @@
 import java.util.Scanner;
 
-class last_digit {
+class first_digit {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter a number:");
         int n = sc.nextInt();
 
-        System.out.println("Last digit: " + n % 10);
+        while (n >= 10)
+            n = n / 10;
+
+        System.out.println("First digit: " + n);
 
         sc.close();
     }
